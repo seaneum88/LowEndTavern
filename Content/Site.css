@@ -1,0 +1,167 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*Index Styles */
+
+body {
+    background-color: auto;
+}
+
+.bar-banner {
+    margin: 0 auto;
+}
+
+.whole-page {
+    width: 100%;
+    height: 100%;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.side-padding-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.right-padding-0 {
+    padding-right: 0px;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+#cocktails-div {
+    display: none;
+}
+
+#tabs-panel {
+    width: 200px;
+    float: left;
+    position: relative;
+    top: 150px;
+    
+}
+
+    #tabs-panel > li > a {
+        color: #666;
+    }
+
+    #tabs-panel > li.active > a,
+    #tabs-panel > li.active > a:hover,
+    #tabs-panel > li.active > a:focus {
+        background-color: #a5a5a5;
+        color: #ffffff;
+    }
+
+.padding-top-bottom {
+    padding: 35px 0 35px 0;
+}
+
+.padding-bottom{
+    padding:45px 55px 15px 55px;
+}
+
+.tab-cont-header{
+    position:relative;
+    left:33%;
+}
+
+.cell-img{
+    display:table-cell;
+}
+
+/*MODAL STYLING*/
+.cell-img{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cell-img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#mask{  
+    position:absolute; /* important */  
+    top:0; /* start from top */  
+    left:0px; /* start from left */  
+    overflow:hidden;
+    display:none; /* don't show it */
+    /* styling bellow */  
+    background-color: black;  
+}  
+
+  
+.modal_window{  
+    position:absolute; /* important so we can position it on center later */  
+    display:none; /* don't show it 
+    /* styling bellow */  
+    color:white;  
+    overflow:hidden;
+}  
+  
+/* style a specific modal window  */  
+#modal_window{  
+    padding:50px;  
+    border:1px solid gray;  
+    background: #246493;  
+    color:black;  
+    
+}  
+
+.modalText{
+    display:inline-block;
+    padding-left:25px;
+}

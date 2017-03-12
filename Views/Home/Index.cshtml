@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <img src="~/Content/images/bar_banner_img.jpg" class="img-full">
+</div>
+<div id="wrapper" style="color:#666; font-family:ariel;">
+    <div class="container width-75">
+        <br>
+        <div class="col-md-12 padding-top-bottom">
+            <h2 class="text-align"><strong>A Word About Us</strong></h2>
+            <div class="text-align">
+                <p style="font-size:1.5em">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec semper tellus. Curabitur tincidunt metus nunc, in pulvinar lectus ultricies vel.
+                    Etiam at elit sed nunc vestibulum egestas. Sed mollis ultricies risus sit amet porta. Donec molestie eros augue. Nullam arcu dui, varius vitae quam a,
+                    dignissim blandit nunc. Nullam rhoncus tempus nulla in lobortis. Nunc varius neque non feugiat lobortis.
+                    Aliquam dui dolor, euismod eleifend ipsum quis, malesuada fermentum lorem. Nulla tortor urna, rhoncus at mi eget,
+                    pretium viverra tortor. Nullam in volutpat ipsum. Quisque eget enim est. Duis elit nunc, sollicitudin rhoncus porta quis,
+                    pellentesque fermentum dui. Donec nisl dui, pretium ac varius id, dapibus ut ipsum. Nulla a enim dolor. Integer dictum ante quis massa
+                    euismod, sed venenatis velit commodo.
+                </p><br>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg12"><img src="~/Content/images/bar-banner-2.jpg" class="img-full"></div>
+    <div class="container padding-top-bottom" style="height:auto;width:100%;max-width:1250px;overflow:hidden;display:table;">
+        <ul id="tabs-panel" class="nav nav-tabs nav-tabs-justified nav-stacked" style="display:table-cell">
+            <li class="active"><a class="center-tabs" data-toggle="tab" href="#cocktails">From the Bottle</a></li>
+            <li><a class="center-tabs" data-toggle="tab" href="#beer">From the Tap</a></li>
+            <li><a class="center-tabs" data-toggle="tab" href="#entrees">Mains From the Kitchen</a></li>
+            <li><a class="center-tabs" data-toggle="tab" href="#apps">Starters From the Kitchen</a></li>
+            <li><a class="center-tabs" data-toggle="tab" href="#order">Order History</a></li>
+
+        </ul>
+        <div class="tab-content" style="position:relative;top:50px;display:table-cell">
+            <div id="cocktails" class="tab-pane fade in active">
+                <h3 class="tab-cont-header">From the Bottle</h3>
+                <div class="col-lg-12">
+                    <div class="col-sm-3 padding-bottom">
+                        <div id="boulevardier" name="bouleModal" class="activate_modal"><img src="~/Content/images/cocktails/boulevardier.jpg" class="cell-img" /></div>
+                    </div>
+                    <div class="col-sm-3 padding-bottom">
+                        <div id="gin-fizz" name="ginFizzModal" class="activate_modal"><img src="~/Content/images/cocktails/gin-fizz.jpg" class="cell-img" /></div>
+                    </div>
+                    <div class="col-sm-3 padding-bottom">
+                        <div id="manhattan" name="manhattanModal" class="activate_modal"><img src="~/Content/images/cocktails/manhattan.jpg" class="cell-img" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="beer" class="tab-pane fade">
+                <h3 class="tab-cont-header">From the Tap</h3>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="amber" name="amberModal" class="activate_modal"><img src="~/Content/images/beer/amber-ale.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="lager" name="lagerModal" class="activate_modal"><img src="~/Content/images/beer/lager.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="guinness" name="guinnessModal" class="activate_modal"><img src="~/Content/images/beer/guinness.png" class="cell-img" /></div>
+                </div>
+            </div>
+            <div id="entrees" class="tab-pane fade">
+                <h3 class="tab-cont-header" style="left:28%">Mains From the Kitchen</h3>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="burger" name="burgerModal" class="activate_modal"><img src="~/Content/images/food/burger.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="chickenWings" name="chickenWingsModal" class="activate_modal"><img src="~/Content/images/food/ChickenWings.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="primeRibSandwich" name="PrimeRibSandwichModal" class="activate_modal"><img src="~/Content/images/food/primeribsandwich.jpg" class="cell-img" /></div>
+                </div>
+            </div>
+            <div id="apps" class="tab-pane fade">
+                <h3 class="tab-cont-header" style="left:28%;">Starters From the Kitchen</h3>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="bOnion" name="bOnionModal" class="activate_modal"><img src="~/Content/images/food/bloomingOnion.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="jPoppers" name="jPoppersModal" class="activate_modal"><img src="~/Content/images/food/jalapenoPoppers.jpg" class="cell-img" /></div>
+                </div>
+                <div class="col-sm-3 padding-bottom">
+                    <div id="potatoSkins" name="potatoSkinsModal" class="activate_modal"><img src="~/Content/images/food/potatoskins.jpg" class="cell-img" /></div>
+                </div>
+            </div>
+            <div id="order" class="tab-pane fade">
+                <h3 class="tab-cont-header" style="left:28%;">Order History</h3>
+                <div class="col-lg-12">
+                    <form action="completed.html" onsubmit="orderAgain()" method="get">
+                        <fieldset>
+
+                            <fieldset style="border-radius: 15px; box-shadow: 5px 5px 5px #C0C0C0;">
+                                <legend> Order Number </legend>
+                                <div class="col-sm-3 padding-bottom"></div>
+                                <input type="submit" id="order" value="order again">
+                                <input type="button" value="clear order" onclick="clearOrder();">
+                                <input type="button" value="clear all orders" onclick="clearAllOrder();">
+                            </fieldset>
+
+                            <fieldset style="border-radius: 15px; box-shadow: 5px 5px 5px #C0C0C0;">
+
+
+                                <legend> Bill </legend>
+
+
+                                <div>No order history has been found</div>
+                                <div name="bill"></div>
+                                <input type="hidden" id="hiddenBill" name="hiddenBill"><br>
+                            </fieldset>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div id='mask' class='close_modal'></div>
+<div id='bouleModal' class='modal_window'><img src="~/Content/images/cocktails/boulevardier.jpg" class="cell-img" style="float:left" /><div class="modalText"><h3>Boulevardier</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='ginFizzModal' class='modal_window'><img src="~/Content/images/cocktails/gin-fizz.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Gin Fizz</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 100px"><h5>Order</h5></div></div>
+<div id='manhattanModal' class='modal_window'><img src="~/Content/images/cocktails/manhattan.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Manhattan</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='amberModal' class='modal_window'><img src="~/Content/images/beer/amber-ale.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Amber Ale</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='lagerModal' class='modal_window'><img src="~/Content/images/beer/lager.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>American Lager</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='guinnessModal' class='modal_window'><img src="~/Content/images/beer/guinness.png" class="cell-img" style="float:left;" /><div class="modalText"><h3>Guinness Draught</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='burgerModal' class='modal_window'><img src="~/Content/images/food/burger.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>8oz Burger</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='chickenWingsModal' class='modal_window'><img src="~/Content/images/food/ChickenWings.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>1 lb Chicken Wings</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='PrimeRibSandwichModal' class='modal_window'><img src="~/Content/images/food/primeribsandwich.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Prime Rib Sandwich</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='bOnionModal' class='modal_window'><img src="~/Content/images/food/bloomingOnion.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Blooming Onion</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='jPoppersModal' class='modal_window'><img src="~/Content/images/food/jalapenoPoppers.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Jalapeno Poppers</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id='potatoSkinsModal' class='modal_window'><img src="~/Content/images/food/potatoSkins.jpg" class="cell-img" style="float:left;" /><div class="modalText"><h3>Loaded Potato Skins</h3></div><br /><br /><br /><br /><br /><br /><div class="modalText" style="width: 120px"><h5>Order</h5></div></div>
+<div id="footer"></div>
+
+<script src="~/Scripts/all.js"></script>
